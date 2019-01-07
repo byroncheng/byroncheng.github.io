@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            /* Column container */
+            .content {  
+                display: flex;
+                flex-wrap: wrap;
+                
+                width:960px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            
+            .left, .right{
+                padding: 10px;
+                flex: 50%;
+            }
+            @media (max-width: /*700px*/ 960px) {
+                .content {   
+                    flex-direction: column;
+
+                    width: 450px;
+                }
+            }
+
+            body { font-family: Verdana, Geneva, sans-serif; }
+            h1 { font-size: 200%; font-style: normal; font-variant: normal; font-weight: 700; }
+            h2 { font-size: 150%; font-style: normal; font-variant: normal; font-weight: 700; }
+            p { font-size: 100%; font-style: normal; font-variant: normal; font-weight: 400; }
+            img { max-width: 100%; }
+        </style>
+    </head>
+    <body>
+        <div class='content'>
+            <div class='left'>
+                <div class='headshot'>
+                    <img src="21762370_10109061451759853_1302708710854528105_o.jpg" alt="Byron Headshot">
+                </div>
+            </div>
+            <div class='right'>
+                <div class='intro'>
+                    <h1>Byron Cheng</h1>
+                    <h2>Sustainability Technology Manager in Chicago, IL</h2>
+                    <p>Airplanes, Transit, Cities, and Music</p>
+                    <p>I love to learn, eat, and boulder. Join me!</p>
+                </div>
+                <div class='links'>
+                    <p>
+                        <a href="http://twitter.com/byroncheng" target="blank">Twitter</a>
+                        <a href="http://instagram.com/byroncheng" target="blank">Instagram</a>
+                        <a href="http://www.linkedin.com/in/byroncheng" target="blank">LinkedIn</a>
+                        <a href="https://github.com/byroncheng" target="blank">GitHub</a>
+                    </p>
+                </div>
+                <div class='projects'>
+                    <h2>Projects</h2>
+                    <p><a href="http://busfinder.byronasaurus.com/" target="blank">Busfinder</a>
+                    <a href="http://Colorclock.byronasaurus.com/" target="blank">Colorclock</a>
+                    <a href="https://smile.amazon.com/Byronasaurus-Find-a-Bike/dp/B01MQXLCJ4/" target="blank">Find A Bike</a></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
