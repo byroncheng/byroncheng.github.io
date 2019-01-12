@@ -1,6 +1,7 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Byronasaurus - Byron Cheng</title>
         <style>
             * {
                 box-sizing: border-box;
@@ -12,34 +13,29 @@
             .content {  
                 display: flex;
                 flex-wrap: wrap;
-                height: 100%;
+                /* flex: 480px; */
+                /* height: 100%; */
                 justify-content: center;
-
+                /* align-items: flex-start; */
                 
                 
-                /* width:960px;
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%); */
+                /* width:960px; */
+                /* position: absolute; */
+                /* left: 50%; */
+                /* top: 50%; */
+                /* transform: translate(-50%, -50%); */
             }
 
-            @media (orientation:landscape){
-                .content{
-                    align-items: center;
-                    align-content: center;
-                }
-            }
             
             .left, .right{
-                max-height:;
-                max-width: 500px;
+                width: 500px;
+                max-width: 100%;
                 padding: 10px;
                 /* flex: 50%; */
             }
 
             /* mobile portrait */
-            /* @media (max-width: 500px) and (orientation:portrait) {
+            /* @media (max-width: 500px) and (orientation:landscape) {
                 .content {   
                     flex-direction: column;
 
@@ -53,7 +49,7 @@
             h1 { font-size: 200%; font-style: normal; font-variant: normal; font-weight: 700; }
             h2 { font-size: 150%; font-style: normal; font-variant: normal; font-weight: 700; }
             p { font-size: 100%; font-style: normal; font-variant: normal; font-weight: 400; }
-            img { max-width: 100%; }
+            img { width: 100%; max-width: 500px; }
         </style>
     </head>
     <body>
